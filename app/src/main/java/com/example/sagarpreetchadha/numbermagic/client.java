@@ -39,7 +39,7 @@ public class client {
                     })
                     .build();
 
-            Retrofit r = new Retrofit.Builder().baseUrl("").
+            Retrofit r = new Retrofit.Builder().baseUrl("https://numbersapi.p.mashape.com").
                     addConverterFactory(GsonConverterFactory.create(
                             new GsonBuilder().create())).client(client)
                     .build();
